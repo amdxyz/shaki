@@ -1,0 +1,20 @@
+{
+        "build": {
+            "core": "avr",
+            "extra_flags": "",
+            "f_cpu": "8000000L",
+            "mcu": "attiny88",
+            "variant": "tiny8"
+        },
+        "frameworks": [],
+        "name": "AMDX Shaki",
+        "platform": "atmelavr",
+        "upload": {
+            "maximum_ram_size": 512,
+            "maximum_size": 8192,
+            "protocol": "avrispmkii",
+            "flags": "-Pusb -e"
+        },
+        "url": "http://www.archimedes-exhibitions.de",
+        "vendor": "Archimedes Exhibitions GmbH"
+}

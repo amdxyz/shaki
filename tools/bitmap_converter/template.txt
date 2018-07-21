@@ -1,0 +1,21 @@
+
+#ifndef FRAMEDATA_H_
+#define FRAMEDATA_H_
+
+#include <stdint.h>
+#include <avr/pgmspace.h>
+
+// Persist each frame for %(spf)d shakes
+#define SPF    %(spf)d
+
+// Framebuffer boundaries
+#define FRAMES_COUNT  %(framesCount)d
+#define COLS          %(cols)d
+
+// Framebuffer
+// Each byte represents a column, each array a frame
+const uint8_t frames[FRAMES_COUNT][COLS] PROGMEM = {
+        %(frames)s
+};
+
+#endif /* FRAMEDATA_H_ */
